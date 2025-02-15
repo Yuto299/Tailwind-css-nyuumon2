@@ -2,6 +2,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faRocket } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import humanImage from './images/human.jpg';
+import portfolio1 from './images/portfolio1.jpg';
+import portfolio2 from './images/portfolio2.jpg';
+import portfolio3 from './images/portfolio3.jpg';
+import portfolio4 from './images/portfolio4.jpg';
+import portfolio5 from './images/portfolio5.jpg';
+import portfolio6 from './images/portfolio6.jpg';
 
 export const App = () => {
   return (
@@ -57,6 +63,26 @@ export const App = () => {
             className='md:absolute lg:top-2 lg:right-48 md:w-3/5 w-10/12 mt-12 md:mt-0 right-6 mx-auto -z-10 lg:w-3/6'
           />
         </div>
+      </div>
+
+      {/* ポートフォリオセクション */}
+      <div
+        id='portfolio'
+        className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'
+      >
+        <section className='w-full'>
+          <h2 className='secondary-title'>私のポートフォリオ</h2>
+          <p className='section-paragraph'>私が作ってきたWebアプリケーションはこちら</p>
+
+          <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
+            <img src={portfolio1} alt='1' className='w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer' />
+            <img src={portfolio2} alt='2' className='w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer' />
+            <img src={portfolio3} alt='3' className='w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer' />
+            <img src={portfolio4} alt='4' className='w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer' />
+            <img src={portfolio5} alt='5' className='w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer' />
+            <img src={portfolio6} alt='6' className='w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer' />
+          </div>
+        </section>
       </div>
     </>
   );
