@@ -8,6 +8,7 @@ import portfolio3 from './images/portfolio3.jpg';
 import portfolio4 from './images/portfolio4.jpg';
 import portfolio5 from './images/portfolio5.jpg';
 import portfolio6 from './images/portfolio6.jpg';
+import { faJs } from '@fortawesome/free-brands-svg-icons';
 
 export const App = () => {
   return (
@@ -23,8 +24,8 @@ export const App = () => {
             <a href='#portfolio' className='hover:text-selected-text transition-all duration-300'>
               ポートフォリオ
             </a>
-            <a href='#clients' className='hover:text-selected-text transition-all duration-300'>
-              お客様
+            <a href='#skill' className='hover:text-selected-text transition-all duration-300'>
+              スキル一覧
             </a>
             <a href='#contact'>
               <button className='px-6 py-2 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300'>
@@ -81,6 +82,28 @@ export const App = () => {
             <img src={portfolio4} alt='4' className='w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer' />
             <img src={portfolio5} alt='5' className='w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer' />
             <img src={portfolio6} alt='6' className='w-full h-36 lg:h-72 object-cover rounded-md cursor-pointer' />
+          </div>
+        </section>
+      </div>
+
+      {/* スキルスタック */}
+      <div
+        id='portfolio'
+        className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'
+      >
+        <section className='w-full'>
+          <h2 className='secondary-title'>スキルスタック</h2>
+          <p className='section-paragraph'>私は以下のプログラミング言語を使用可能です。</p>
+          <div className='my-16'>
+            <div className='w-full border border-purple-200'>
+              {/* 言語のロゴ */}
+              <div>
+                <FontAwesomeIcon icon={faJs} className='text-7xl text-yellow-300' />
+              </div>
+
+              {/* スキルの説明 */}
+              <div></div>
+            </div>
           </div>
         </section>
       </div>
