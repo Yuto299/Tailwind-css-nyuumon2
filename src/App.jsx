@@ -8,7 +8,7 @@ import portfolio3 from './images/portfolio3.jpg';
 import portfolio4 from './images/portfolio4.jpg';
 import portfolio5 from './images/portfolio5.jpg';
 import portfolio6 from './images/portfolio6.jpg';
-import { faCss, faHtml5, faJs } from '@fortawesome/free-brands-svg-icons';
+import { faCss, faFacebook, faHtml5, faInstagram, faJs, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export const App = () => {
   return (
@@ -182,6 +182,22 @@ export const App = () => {
               <button className='px-8 py-3 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300'>
                 送信する
               </button>
+            </div>
+            <div>
+              <p className='text-secondary'>000-111-2222</p>
+              <a href='mailto:21e1042@u.seijo.ac.jp'>21e1042@u.seijo.ac.jp</a>
+              {/* SNS */}
+              <div className='mt-20 space-x-6'>
+                <a href='#'>
+                  <FontAwesomeIcon icon={faTwitter} className='text-3xl text-blue-400' />
+                </a>
+                <a href='#'>
+                  <FontAwesomeIcon icon={faFacebook} className='text-3xl text-blue-600' />
+                </a>
+                <a href='#'>
+                  <FontAwesomeIcon icon={faInstagram} className='text-3xl text-pink-400' />
+                </a>
+              </div>
             </div>
           </div>
         </section>
