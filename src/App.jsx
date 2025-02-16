@@ -97,16 +97,16 @@ export const App = () => {
           <div className='my-16'>
             <div className='w-full border border-purple-200 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap space-x-32'>
               {/* 言語のロゴ */}
-              <div>
-                <FontAwesomeIcon icon={faJs} className='text-7xl text-yellow-300' />
+              <div className='mb-6 lg:mb-0 self-center'>
+                <FontAwesomeIcon icon={faJs} className='text-9xl text-yellow-300' />
               </div>
 
               {/* スキルの説明 */}
               <div>
                 <h3 className='text-3xl font-semibold'>JavaScript</h3>
-                <div>
-                  <div>ウェブサイト制作</div>
-                  <div>フロントエンド開発</div>
+                <div className='flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8'>
+                  <div className='badge'>ウェブサイト制作</div>
+                  <div className='badge'>フロントエンド開発</div>
                 </div>
                 <p>JavaScriptエンジニア。フレームワークも使用可能です。</p>
               </div>
