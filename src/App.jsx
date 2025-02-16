@@ -8,7 +8,7 @@ import portfolio3 from './images/portfolio3.jpg';
 import portfolio4 from './images/portfolio4.jpg';
 import portfolio5 from './images/portfolio5.jpg';
 import portfolio6 from './images/portfolio6.jpg';
-import { faJs } from '@fortawesome/free-brands-svg-icons';
+import { faCss, faHtml5, faJs } from '@fortawesome/free-brands-svg-icons';
 
 export const App = () => {
   return (
@@ -94,6 +94,48 @@ export const App = () => {
         <section className='w-full'>
           <h2 className='secondary-title'>スキルスタック</h2>
           <p className='section-paragraph'>私は以下のプログラミング言語を使用可能です。</p>
+
+          {/* HTML */}
+          <div className='my-16'>
+            <div className='w-full border border-purple-200 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-orange-400 transition-all duration-300 cursor-pointer'>
+              {/* 言語のロゴ */}
+              <div className='mb-6 lg:mb-0 self-center'>
+                <FontAwesomeIcon icon={faHtml5} className='text-9xl text-orange-400' />
+              </div>
+
+              {/* スキルの説明 */}
+              <div className='text-center flex flex-wrap justify-center lg:text-left lg:block'>
+                <h3 className='text-3xl font-semibold'>HTML5</h3>
+                <div className='flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8'>
+                  <div className='badge'>ウェブサイト制作</div>
+                  <div className='badge'>フロントエンド開発</div>
+                </div>
+                <p className='text-secondary'>HPやLPも作成可能です。料金は30万円から承っております。</p>
+              </div>
+            </div>
+          </div>
+
+          {/* CSS */}
+          <div className='my-16'>
+            <div className='w-full border border-purple-200 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-blue-300 transition-all duration-300 cursor-pointer'>
+              {/* 言語のロゴ */}
+              <div className='mb-6 lg:mb-0 self-center'>
+                <FontAwesomeIcon icon={faCss} className='text-9xl text-blue-300' />
+              </div>
+
+              {/* スキルの説明 */}
+              <div className='text-center flex flex-wrap justify-center lg:text-left lg:block'>
+                <h3 className='text-3xl font-semibold'>CSS</h3>
+                <div className='flex flex-wrap w-full justify-center gap-3 lg:w-auto lg:justify-start mt-6 mb-8'>
+                  <div className='badge'>ウェブサイト制作</div>
+                  <div className='badge'>フロントエンド開発</div>
+                </div>
+                <p className='text-secondary'>TailwindCSS、Saasも使用可能です。UIを意識して作成します。</p>
+              </div>
+            </div>
+          </div>
+
+          {/* JavaScript */}
           <div className='my-16'>
             <div className='w-full border border-purple-200 p-16 lg:px-32 lg:py-20 flex justify-center lg:justify-start flex-wrap lg:space-x-32 hover:border-yellow-300 transition-all duration-300 cursor-pointer'>
               {/* 言語のロゴ */}
