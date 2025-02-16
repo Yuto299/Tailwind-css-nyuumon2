@@ -156,6 +156,25 @@ export const App = () => {
           </div>
         </section>
       </div>
+
+      {/* お問い合わせ */}
+      <div
+        id='contact'
+        className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'
+      >
+        <section className='w-full'>
+          <h2 className='secondary-title'>お問い合わせ</h2>
+          <p className='section-paragraph'>お問い合わせは以下のフォームからお願いいたします。</p>
+          <div className='w-ful grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16'>
+            <div>
+              <div>
+                <label className='text-white block mb-6 text-xl font-bold'>お名前</label>
+                <input type='text' className='w-full border border-inputBorder bg-input px-4 py-4' />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </>
   );
 };
