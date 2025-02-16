@@ -89,7 +89,7 @@ export const App = () => {
       {/* スキルスタック */}
       <div
         id='portfolio'
-        className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'
+        className='container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'
       >
         <section className='w-full'>
           <h2 className='secondary-title'>スキルスタック</h2>
@@ -160,17 +160,28 @@ export const App = () => {
       {/* お問い合わせ */}
       <div
         id='contact'
-        className='container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'
+        className='container mt-40 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'
       >
         <section className='w-full'>
           <h2 className='secondary-title'>お問い合わせ</h2>
           <p className='section-paragraph'>お問い合わせは以下のフォームからお願いいたします。</p>
           <div className='w-ful grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16'>
-            <div>
+            <div className='space-y-12'>
               <div>
                 <label className='text-white block mb-6 text-xl font-bold'>お名前</label>
                 <input type='text' className='w-full border border-inputBorder bg-input px-4 py-4' />
               </div>
+              <div>
+                <label className='text-white block mb-6 text-xl font-bold'>メールアドレス</label>
+                <input type='email' className='w-full border border-inputBorder bg-input px-4 py-4' />
+              </div>
+              <div>
+                <label className='text-white block mb-6 text-xl font-bold'>メッセージ</label>
+                <input type='message' className='w-full border border-inputBorder bg-input px-20 py-20' />
+              </div>
+              <button className='px-8 py-3 bg-theme font-bold rounded-lg hover:bg-purple-600 transition-all duration-300'>
+                送信する
+              </button>
             </div>
           </div>
         </section>
