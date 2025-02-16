@@ -24,7 +24,7 @@ export const App = () => {
             <a href='#portfolio' className='hover:text-selected-text transition-all duration-300'>
               ポートフォリオ
             </a>
-            <a href='#skill' className='hover:text-selected-text transition-all duration-300'>
+            <a href='#skills' className='hover:text-selected-text transition-all duration-300'>
               スキル一覧
             </a>
             <a href='#contact'>
@@ -88,7 +88,7 @@ export const App = () => {
 
       {/* スキルスタック */}
       <div
-        id='portfolio'
+        id='skills'
         className='container mt-40 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'
       >
         <section className='w-full'>
