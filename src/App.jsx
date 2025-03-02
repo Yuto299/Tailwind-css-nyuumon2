@@ -16,7 +16,7 @@ export const App = () => {
       {/* // ナビゲーションバー */}
       <header className='py-6'>
         <div className='container mx-auto flex justify-between items-center px-8 md:px-14 lg:px-24 w-full'>
-          <div className='text-3xl font-bold'>Yut.com</div>
+          <div className='text-3xl font-bold'>Yuto.com</div>
           <div className='space-x-12 hidden md:flex items-center'>
             <a href='#home' className='hover:text-selected-text transition-all duration-300'>
               ホーム
@@ -184,7 +184,7 @@ export const App = () => {
               </button>
             </div>
             <div>
-              <p className='text-secondary'>000-111-2222</p>
+              <p className='text-secondary'>080-3930-4736</p>
               <a href='mailto:21e1042@u.seijo.ac.jp'>21e1042@u.seijo.ac.jp</a>
               {/* SNS */}
               <div className='mt-20 space-x-6'>

@@ -13,7 +13,7 @@ body {
 
 .secondary-title::before {
   content: '';
-  @apply block w-12 h-2 bg-theme rounded-full mb-1;
+  @apply block w-12 h-2 bg-theme rounded-full mb-4;
 }
 
 .section-paragraph {
